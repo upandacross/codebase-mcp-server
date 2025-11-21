@@ -120,13 +120,18 @@ Rebuild the codebase index from scratch
 
 ### In VS Code with GitHub Copilot Chat
 
+**Important**: Use the `@workspace` prefix to activate MCP tools. Without it, Copilot won't use your indexed codebase.
+
 ```
 @workspace find the user authentication route
 @workspace list all database models
 @workspace explain the database helper module
+@workspace search for email validation functions
 ```
 
 ### In Claude Desktop
+
+Claude Desktop automatically uses available MCP tools - no special prefix needed:
 
 ```
 Find all functions related to email validation
