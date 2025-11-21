@@ -1,0 +1,22 @@
+[project]
+name = "codebase-mcp-server"
+version = "0.1.0"
+description = "MCP Server for exploring and searching code in Python, SQL, and Markdown files"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "mcp>=1.0.0",
+]
+
+[project.optional-dependencies]
+embeddings = [
+    "sentence-transformers>=2.2.0",
+    "torch>=2.0.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = []
